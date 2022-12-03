@@ -1,27 +1,16 @@
-# AngularPongGame
+# Angular Pong Game
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.1.3.
+Run `npm run start` to start frontend dev server and `npm run server-dev` to start backend/socket server
 
-## Development server
+The pong game could be played with up to 4 players connected via socket. 
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+The game is infinite and made just for fun, so you can join it or disconnect from the server whenever you want.
 
-## Code scaffolding
+***
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Control your platform with keyboard arrows.
 
-## Build
+You can watch the game process using this link:
+https://vimeo.com/777591181/be18ac6510
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Enjoy :)

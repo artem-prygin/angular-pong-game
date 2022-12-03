@@ -10,14 +10,27 @@
     "experimentalDecorators": true,
     "moduleResolution": "node",
     "importHelpers": true,
-    "target": "es2015",
+    "target": "ES2022",
     "module": "es2020",
     "lib": [
-      "es2018",
+      "es2020",
       "dom"
-    ]
+    ],
+    "types": [
+      "node"
+    ],
+    "typeRoots": [
+      "../node_modules/@types"
+    ],
+    "useDefineForClassFields": false
   },
   "angularCompilerOptions": {
+    "types": [
+      "node"
+    ],
+    "typeRoots": [
+      "../node_modules/@types"
+    ],
     "enableI18nLegacyMessageIdFormat": false
   }
 }

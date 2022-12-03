@@ -1,0 +1,18 @@
+.container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .game-wrapper {
+        height: 500px;
+        width: 500px;
+        background: antiquewhite;
+        position: relative;
+    }
+}
+
+.m-40 {
+    margin: 40px;
+}

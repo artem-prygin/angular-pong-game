@@ -1,0 +1,18 @@
+<div class="container"
+     *ngIf="gameService.socketIsConnected; else socketConnectionFailed">
+    <ng-container *ngIf="currentPlayer">
+        <div class="game-wrapper">
+            <app-player-platforms [playersNumbers]="playersNumbers"
+                                  [currentPlayer]="currentPlayer"
+                                  [allPlayers]="allPlayers"></app-player-platforms>
+
+            <app-pong-ball [ballPosition]="ballPosition"></app-pong-ball>
+        </div>
+
+        <app-lose-image *ngIf="currentPlayer?.playerNumber === loserPlayerNumber"></app-lose-image>
+    </ng-container>
+</div>
+
+<ng-template #socketConnectionFailed>
+    <h2 class="m-40">Waiting for Socket Connection... Wait a little bit or try again later</h2>
+</ng-template>

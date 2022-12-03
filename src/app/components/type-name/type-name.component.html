@@ -1,0 +1,20 @@
+<h1 mat-dialog-title>Type your name</h1>
+
+<mat-dialog-content>
+    <mat-form-field appearance="fill">
+        <mat-label>What's your name?</mat-label>
+        <input matInput
+               autocomplete="off"
+               type="text"
+               [(ngModel)]="username">
+    </mat-form-field>
+</mat-dialog-content>
+
+<div mat-dialog-actions>
+    <button mat-raised-button
+            color="primary"
+            (click)="saveUsername()"
+            [disabled]="username.length === 0">
+        Save
+    </button>
+</div>

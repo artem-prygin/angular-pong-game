@@ -13,4 +13,6 @@ Control your platform with keyboard arrows.
 You can watch the game process using this link:
 https://vimeo.com/777707404/8de45e0583
 
+![](./game-screenshot.png)
+
 Enjoy :)

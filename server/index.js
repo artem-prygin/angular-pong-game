@@ -17,7 +17,7 @@ const ioServerOptions = process.env.NODE_ENV === 'production'
         },
     };
 const io = new Server(server, ioServerOptions);
-const PORT = process.env.PORT || 9999;
+const PORT = process.env.PORT || 5555;
 let usedPlayerNumbers = [];
 let ballMoveInterval;
 

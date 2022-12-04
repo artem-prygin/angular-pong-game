@@ -2,14 +2,14 @@
      *ngIf="gameService.socketIsConnected; else socketConnectionFailed">
     <ng-container *ngIf="currentPlayer">
         <div class="game-wrapper">
-            <app-player-platforms [playersNumbers]="playersNumbers"
+            <app-player-platforms [playersNumbers]="gameService.playersNumbers | async"
                                   [currentPlayer]="currentPlayer"
-                                  [allPlayers]="allPlayers"></app-player-platforms>
+                                  [allPlayers]="gameService.allPlayers | async"></app-player-platforms>
 
-            <app-pong-ball [ballPosition]="ballPosition"></app-pong-ball>
+            <app-pong-ball [ballPosition]="gameService.ballPosition | async"></app-pong-ball>
         </div>
 
-        <app-lose-image *ngIf="currentPlayer?.playerNumber === loserPlayerNumber"></app-lose-image>
+        <app-lose-image *ngIf="currentPlayer?.playerNumber === (gameService.loserPlayerNumber | async)"></app-lose-image>
     </ng-container>
 </div>
 

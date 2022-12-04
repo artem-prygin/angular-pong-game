@@ -6,7 +6,7 @@
     "ng": "ng",
     "start": "ng serve",
     "server-dev": "nodemon server/index.js",
-    "build": "ng build --prod",
+    "build": "ng build --configuration production",
     "server-prod": "NODE_ENV=production node server/index.js"
   },
   "private": true,

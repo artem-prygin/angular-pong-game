@@ -1,10 +1,11 @@
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { MatDialogRef } from '@angular/material/dialog';
 
 @Component({
     selector: 'app-type-name',
     templateUrl: './type-name.component.html',
     styleUrls: ['./type-name.component.scss'],
+    changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class TypeNameComponent {
     username = '';

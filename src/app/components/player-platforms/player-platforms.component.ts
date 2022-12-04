@@ -1,9 +1,7 @@
 import {
     ChangeDetectionStrategy,
     Component,
-    ElementRef,
     Input,
-    ViewChild,
 } from '@angular/core';
 import { GameConstants } from '../../constants/game-constants';
 import { PlayerInterface } from '../../interfaces/player.interface';
@@ -15,7 +13,6 @@ import { PlayerInterface } from '../../interfaces/player.interface';
     changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class PlayerPlatformsComponent {
-    @ViewChild('playerPlatforms') gameField: ElementRef;
     @Input() playersNumbers: number[];
     @Input() currentPlayer: PlayerInterface;
     @Input() allPlayers: PlayerInterface[];
